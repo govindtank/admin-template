@@ -14,6 +14,9 @@ class App extends Component {
       <div className="App">
         <Nav />
         <SideBar />
+        <div id="page-content-wrapper">
+          
+        </div> 
        
       </div>
     </BrowserRouter>

@@ -5,16 +5,16 @@ class Nav extends Component {
   render() {
     return (
       <nav className="navbar navbar-inverse" style={{marginBottom:0}}>
-        <div class="navbar-header">
+        <div class="navbar-header" style={{width:250}}>
           <a class="navbar-brand" href="#">
             WebSiteName
           </a>
         </div>
         <ul className="nav navbar-nav">
           <li className="active">
-            <Link exact to="/">
-              home
-            </Link>
+          <a>
+          <span class="glyphicon glyphicon-menu-hamburger"/>
+          </a>
           </li>
           <li>
             <Link to="/about">about</Link>
