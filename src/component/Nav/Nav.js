@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Nav extends Component {
   render() {
     return (
-      <nav className="navbar navbar-inverse">
+      <nav className="navbar navbar-inverse" style={{marginBottom:0}}>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
             WebSiteName

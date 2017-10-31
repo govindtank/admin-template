@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class SideBar extends Component {
     render() {
       return (
-       
+        <div id="wrapper" class="toggled" >  
         <div id="sidebar-wrapper">
         
             <ul class="sidebar-nav">
@@ -34,7 +34,7 @@ class SideBar extends Component {
             </ul>
         </div>
 
-        
+        </div>
     );
 }
 }
