@@ -14,6 +14,10 @@ body {
     padding-left: 250px;
 }
 
+#wrapper.reduced {
+    padding-left: 70px;
+}
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -31,6 +35,10 @@ body {
 
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
+}
+
+#wrapper.reduced #sidebar-wrapper {
+    width: 70px;
 }
 
 #page-content-wrapper {
