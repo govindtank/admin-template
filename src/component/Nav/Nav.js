@@ -31,12 +31,6 @@ class Nav extends Component {
                 <span className="glyphicon glyphicon-menu-hamburger" />
               </a>
             </li>
-            <li>
-              <Link to="/about">about</Link>
-            </li>
-            <li>
-              <Link to="/contact">contac</Link>
-            </li>
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li>
