@@ -116,6 +116,12 @@ body {
     #page-content-wrapper {
         padding: 20px;
         position: relative;
+        padding-left: 250px;
+    }
+    #page-content-wrapper.reduced {
+        padding: 20px;
+        position: relative;
+        padding-left: 70px;
     }
     #wrapper.toggled #page-content-wrapper {
         position: relative;

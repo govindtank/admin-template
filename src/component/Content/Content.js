@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 class Content extends Component {
     render() {
+        console.log(this.props.toggled)
       return (
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper" className={this.props.toggled ? 'toggled': 'reduced'}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin arcu sem. Phasellus sed interdum nunc. Sed eget dui volutpat, luctus tortor at, viverra enim. Vivamus quis nunc urna. Maecenas id nulla consectetur, vestibulum sem ac, posuere sapien. Suspendisse erat libero, accumsan nec lectus et, consequat viverra erat. Nullam faucibus quam risus, vitae viverra tortor pretium eget. Cras aliquam, lacus a interdum congue, arcu elit sodales diam, vitae sodales nulla risus sed nulla. Vivamus et nibh sed lorem tincidunt tincidunt eu quis turpis. Vivamus et commodo lorem, ac scelerisque turpis. Proin tincidunt sagittis eros, ac iaculis magna cursus non. Proin non urna sodales massa finibus viverra. Phasellus aliquam nunc ipsum, quis aliquet odio rhoncus sit amet. Duis mollis consectetur nisl vitae venenatis. Etiam lectus augue, congue sed mauris vel, pretium rhoncus leo. Vivamus eleifend diam eu est eleifend, at blandit sem pharetra.
         
         Sed elementum sodales tortor sed posuere. Vivamus fringilla fermentum arcu quis tincidunt. Ut consequat nunc nisl. Donec pellentesque viverra ligula, at faucibus neque tincidunt a. Duis eget nisi at felis sodales congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vestibulum euismod urna quis lacinia. Integer ligula tortor, tempus ac nunc at, congue venenatis est. Integer euismod sed leo sit amet laoreet. Aenean luctus accumsan blandit. Mauris tempor libero efficitur elit tincidunt, eu suscipit erat porttitor. Sed vitae ullamcorper justo. Suspendisse nec quam rutrum, hendrerit leo ac, fringilla turpis.

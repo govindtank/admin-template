@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import Content from '../Content/Content'
 
 class SideBar extends Component {
- 
     render() {
+       
       return (
           <div>
-        <div id="wrapper" className={this.props.active ? 'toggled': 'reduced'} >  
+        <div id="wrapper" className={this.props.toggled ? 'toggled': 'reduced'} >  
         <div id="sidebar-wrapper">
         
             <ul className="sidebar-nav">
@@ -38,7 +38,7 @@ class SideBar extends Component {
         </div>
 
         </div>
-        <Content />
+        <Content toggled={this.props.toggled} />
         </div>
     );
 }
