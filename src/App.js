@@ -6,6 +6,7 @@ import Nav from './component/Nav/Nav'
 import SideBar from './component/SideBar/SideBar'
 import Content from './component/Content/Content'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/font-awesome/css/font-awesome.min.css'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 class App extends Component {

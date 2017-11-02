@@ -17,16 +17,16 @@ class SideBar extends Component {
                     <a ui-sref="dashboard"><i className="fa fa-bar-chart" ></i> Dashboard</a>
                 </li>
                 <li>
-                    <a ui-sref="calculator" ><i className="fa fa-calculator"></i> Calculadora</a>
+                    <a ui-sref="calculator" ><i className="fa fa-calculator"></i> Propietarios</a>
                 </li>
                 <li>
-                    <a ui-sref="search"><i className="fa fa-search"></i> Busqueda</a>
+                    <a ui-sref="search"><i className="fa fa-search"></i> Inquilinos</a>
                 </li>
                 <li>
-                    <a ui-sref="company"><i className="fa fa-building-o"></i> Compañia</a>
+                    <a ui-sref="company"><i className="fa fa-building-o"></i> Inmuebles</a>
                 </li>
                 <li>
-                    <a ui-sref="supplier"><i className="fa fa-suitcase"></i> Suplidores</a>
+                    <a ui-sref="supplier"><i className="fa fa-suitcase"></i> Contratos</a>
                 </li>
                 <li>
                     <a ui-sref="dashboard"><i className="fa fa-file-text-o"></i> Reportes</a>
