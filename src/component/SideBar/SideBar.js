@@ -1,42 +1,49 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import Content from '../Content/Content'
+import Content from '../Content/Content';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const menuOptions = [
     {   
         id: 1,
         icon: 'fa fa-bar-chart',
-        name: 'Dashboard'
+        name: 'Dashboard',
+        path:'/dashboard'
     },
     {
         id: 2,
         icon: 'fa fa-address-card-o',
-        name: 'Propietarios'
+        name: 'Propietarios',
+        path:'/owner'
     },
     {   
         id: 3,
         icon: 'fa fa-users',
-        name: 'Inquilinos'
+        name: 'Inquilinos',
+        path:'/householder'
     },
     {
         id: 4,
         icon: 'fa fa-building-o',
-        name: 'Inmuebles'
+        name: 'Inmuebles',
+        path:'/house'
     },
     {
         id: 5,
         icon: 'fa fa-suitcase',
-        name: 'Contratos'
+        name: 'Contratos',
+        path:'/contract'
     },
     {
         id: 6,
         icon: 'fa fa-file-text-o',
-        name: 'Reportes'
+        name: 'Reportes',
+        path:'/report'
     },
     {
         id: 7,
         icon: 'fa fa-money',
-        name: 'Recibos'
+        name: 'Recibos',
+        path:'/bill'
     }
 ];
 
@@ -51,6 +58,7 @@ class SideBar extends Component {
         
             <ul className="sidebar-nav">
              {menuOptions.map(option =>(
+                   
                 <li onClick={this.handleclick} key={option.id} >
                     <a>
                          <i className={option.icon} ></i> 
@@ -58,12 +66,15 @@ class SideBar extends Component {
                          <span className="">   {option.name}</span>
                     </a>
                  </li>
+                
              ))}            
             </ul>
         </div>
 
         </div>
+        <BrowserRouter>
         <Content toggled={this.props.toggled} />
+        </BrowserRouter>
         </div>
     );
 }
