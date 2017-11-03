@@ -20,7 +20,7 @@ class Nav extends Component {
     return (
       <div>
         <nav className="navbar navbar-inverse" style={{ marginBottom: 0 }}>
-          <div className="navbar-header" style={{ width: 250 }}>
+          <div className="navbar-header" style={{ width: 200 }}>
             <a className="navbar-brand" href="#">
               WebSiteName
             </a>
