@@ -1,280 +1,114 @@
 import React, { Component } from "react";
+import Owners from "../../config/owner";
+
 
 class Owner extends Component {
   render() {
     return (
-        <section>
-            
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4>Bootstrap Snipp for Datatable</h4>
-            <div class="table-responsive">
-              <table id="mytable" class="table table-bordred table-striped">
-                <thead>
-                  <th>
-                    <input type="checkbox" id="checkall" />
-                  </th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Address</th>
-                  <th>Email</th>
-                  <th>Contact</th>
-                  <th>Edit</th>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h4>Propietarios</h4>
+              <div className="table-responsive">
+                <table
+                  id="mytable"
+                  className="table table-bordred table-striped">
+                  <thead>
+                    <tr>
+                      <th>
+                        <input type="checkbox" id="checkall" />
+                      </th>
+                      <th>Nombre</th>
+                      <th>Apellido</th>
+                      <th>Email</th>
+                      <th>Contact</th>
+                      <th>Edit</th>
 
-                  <th>Delete</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <input type="checkbox" class="checkthis" />
-                    </td>
-                    <td>Mohsin</td>
-                    <td>Irshad</td>
-                    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                    <td>isometric.mohsin@gmail.com</td>
-                    <td>+923335586757</td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Edit"
-                      >
-                        <button
-                          class="btn btn-primary btn-xs"
-                          data-title="Edit"
-                          data-toggle="modal"
-                          data-target="#edit"
-                        >
-                          <span class="glyphicon glyphicon-pencil" />
-                        </button>
-                      </p>
-                    </td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Delete"
-                      >
-                        <button
-                          class="btn btn-danger btn-xs"
-                          data-title="Delete"
-                          data-toggle="modal"
-                          data-target="#delete"
-                        >
-                          <span class="glyphicon glyphicon-trash" />
-                        </button>
-                      </p>
-                    </td>
-                  </tr>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {Owners.map(owner=>(
 
-                  <tr>
-                    <td>
-                      <input type="checkbox" class="checkthis" />
-                    </td>
-                    <td>Mohsin</td>
-                    <td>Irshad</td>
-                    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                    <td>isometric.mohsin@gmail.com</td>
-                    <td>+923335586757</td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Edit"
-                      >
-                        <button
-                          class="btn btn-primary btn-xs"
-                          data-title="Edit"
-                          data-toggle="modal"
-                          data-target="#edit"
+                    <tr key={owner.id}>
+                      <td>
+                        <input type="checkbox" className="checkthis" />
+                      </td>
+                      <td>{owner.first_name}</td>
+                      <td>{owner.last_name}</td>
+                      <td>{owner.email}</td>
+                      <td>{owner.phone}</td>
+                      <td>
+                        <p
+                          data-placement="top"
+                          data-toggle="tooltip"
+                          title="Edit"
                         >
-                          <span class="glyphicon glyphicon-pencil" />
-                        </button>
-                      </p>
-                    </td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Delete"
-                      >
-                        <button
-                          class="btn btn-danger btn-xs"
-                          data-title="Delete"
-                          data-toggle="modal"
-                          data-target="#delete"
+                          <button
+                            className="btn btn-primary btn-xs"
+                            data-title="Edit"
+                            data-toggle="modal"
+                            data-target="#edit"
+                          >
+                            <span className="glyphicon glyphicon-pencil" />
+                          </button>
+                        </p>
+                      </td>
+                      <td>
+                        <p
+                          data-placement="top"
+                          data-toggle="tooltip"
+                          title="Delete"
                         >
-                          <span class="glyphicon glyphicon-trash" />
-                        </button>
-                      </p>
-                    </td>
-                  </tr>
+                          <button
+                            className="btn btn-danger btn-xs"
+                            data-title="Delete"
+                            data-toggle="modal"
+                            data-target="#delete"
+                          >
+                            <span className="glyphicon glyphicon-trash" />
+                          </button>
+                        </p>
+                      </td>
+                    </tr>
+                    ))}
+                  </tbody>
+                </table>
 
-                  <tr>
-                    <td>
-                      <input type="checkbox" class="checkthis" />
-                    </td>
-                    <td>Mohsin</td>
-                    <td>Irshad</td>
-                    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                    <td>isometric.mohsin@gmail.com</td>
-                    <td>+923335586757</td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Edit"
-                      >
-                        <button
-                          class="btn btn-primary btn-xs"
-                          data-title="Edit"
-                          data-toggle="modal"
-                          data-target="#edit"
-                        >
-                          <span class="glyphicon glyphicon-pencil" />
-                        </button>
-                      </p>
-                    </td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Delete"
-                      >
-                        <button
-                          class="btn btn-danger btn-xs"
-                          data-title="Delete"
-                          data-toggle="modal"
-                          data-target="#delete"
-                        >
-                          <span class="glyphicon glyphicon-trash" />
-                        </button>
-                      </p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <input type="checkbox" class="checkthis" />
-                    </td>
-                    <td>Mohsin</td>
-                    <td>Irshad</td>
-                    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                    <td>isometric.mohsin@gmail.com</td>
-                    <td>+923335586757</td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Edit"
-                      >
-                        <button
-                          class="btn btn-primary btn-xs"
-                          data-title="Edit"
-                          data-toggle="modal"
-                          data-target="#edit"
-                        >
-                          <span class="glyphicon glyphicon-pencil" />
-                        </button>
-                      </p>
-                    </td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Delete"
-                      >
-                        <button
-                          class="btn btn-danger btn-xs"
-                          data-title="Delete"
-                          data-toggle="modal"
-                          data-target="#delete"
-                        >
-                          <span class="glyphicon glyphicon-trash" />
-                        </button>
-                      </p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <input type="checkbox" class="checkthis" />
-                    </td>
-                    <td>Mohsin</td>
-                    <td>Irshad</td>
-                    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                    <td>isometric.mohsin@gmail.com</td>
-                    <td>+923335586757</td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Edit"
-                      >
-                        <button
-                          class="btn btn-primary btn-xs"
-                          data-title="Edit"
-                          data-toggle="modal"
-                          data-target="#edit"
-                        >
-                          <span class="glyphicon glyphicon-pencil" />
-                        </button>
-                      </p>
-                    </td>
-                    <td>
-                      <p
-                        data-placement="top"
-                        data-toggle="tooltip"
-                        title="Delete"
-                      >
-                        <button
-                          class="btn btn-danger btn-xs"
-                          data-title="Delete"
-                          data-toggle="modal"
-                          data-target="#delete"
-                        >
-                          <span class="glyphicon glyphicon-trash" />
-                        </button>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="clearfix" />
-              <ul class="pagination pull-right">
-                <li class="disabled">
-                  <a href="#">
-                    <span class="glyphicon glyphicon-chevron-left" />
-                  </a>
-                </li>
-                <li class="active">
-                  <a href="#">1</a>
-                </li>
-                <li>
-                  <a href="#">2</a>
-                </li>
-                <li>
-                  <a href="#">3</a>
-                </li>
-                <li>
-                  <a href="#">4</a>
-                </li>
-                <li>
-                  <a href="#">5</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="glyphicon glyphicon-chevron-right" />
-                  </a>
-                </li>
-              </ul>
+                <div className="clearfix" />
+                <ul className="pagination pull-right">
+                  <li className="disabled">
+                    <a href="#">
+                      <span className="glyphicon glyphicon-chevron-left" />
+                    </a>
+                  </li>
+                  <li className="active">
+                    <a href="#">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span className="glyphicon glyphicon-chevron-right" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-        </section>
+      </section>
     );
   }
 }
