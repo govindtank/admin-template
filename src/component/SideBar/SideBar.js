@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Content from '../Content/Content';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const menuOptions = [
     {   
@@ -60,11 +60,11 @@ class SideBar extends Component {
              {menuOptions.map(option =>(
                    
                 <li onClick={this.handleclick} key={option.id} >
-                    <a>
+                    <Link to={option.path}>
                          <i className={option.icon} ></i> 
                          {/* modificar esta parte para poner iconos grandes en reduced */}
                          <span className="">   {option.name}</span>
-                    </a>
+                    </Link>
                  </li>
                 
              ))}            
@@ -72,9 +72,9 @@ class SideBar extends Component {
         </div>
 
         </div>
-        <BrowserRouter>
+ 
         <Content toggled={this.props.toggled} />
-        </BrowserRouter>
+
         </div>
     );
 }
