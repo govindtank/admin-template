@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Dashboard from  '../Dashboard/Dashboard'
-import House from '../House/House'
-import HouseHolder from '../HouseHolder/HouseHolder'
-import Owner from '../Owner/Owner'
-import Contract from '../Contract/Contract'
+import Dashboard from  '../../modules/Dashboard/Dashboard'
+import House from '../../modules/House/House'
+import HouseHolder from '../../modules/HouseHolder/HouseHolder'
+import Owner from '../../modules/Owner/Owner'
+import Contract from '../../modules/Contract/Contract'
 
 class Content extends Component {
     render() {
