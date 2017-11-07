@@ -7,11 +7,11 @@ class Owner extends Component {
   render() {
     return (
       // <section>
-        <div className="container">
+        <div className="">
           <h4>Propietarios</h4>
           <div className="row">
             <div className="col-md-12">
-              <div className="form-group pull-right" style={{ width: 300 }}>
+              <div className="form-group" style={{ width: 300 }}>
                 <input
                   type="text"
                   className="form-control"
