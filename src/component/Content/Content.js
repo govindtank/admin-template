@@ -11,6 +11,8 @@ class Content extends Component {
         console.log(this.props.toggled)
       return (
         <div id="page-content-wrapper" className={this.props.toggled ? 'toggled': 'reduced'}>
+        <div className="well" >
+
             <Switch>
                 <Route path='/dashboard' component={Dashboard} />
                 <Route path='/owner' component={Owner} />
@@ -19,6 +21,7 @@ class Content extends Component {
                 <Route path='/contract' component={Contract} />
                
             </Switch>
+        </div>
         </div> 
     );
 }

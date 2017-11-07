@@ -20,7 +20,7 @@ class Nav extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-inverse" style={{ marginBottom: 0 }}>
+        <nav className="navbar navbar-inverse navbar-fixed-top" style={{ marginBottom: 0 }}>
           <div className="navbar-header" style={{ width: 200 }}>
             <a className="navbar-brand" href="#">
               WebSiteName

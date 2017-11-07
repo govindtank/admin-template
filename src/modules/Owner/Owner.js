@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import Owners from "../../config/owner";
+import Modal from '../../component/Modal/Modal'
+import Pagination from '../../component/Pagination/Pagination'
 
 class Owner extends Component {
   render() {
     return (
-      <section>
+      // <section>
         <div className="container">
           <h4>Propietarios</h4>
           <div className="row">
@@ -87,38 +89,15 @@ class Owner extends Component {
                 </table>
 
                 <div className="clearfix" />
-                <ul className="pagination pull-right">
-                  <li className="disabled">
-                    <a href="#">
-                      <span className="glyphicon glyphicon-chevron-left" />
-                    </a>
-                  </li>
-                  <li className="active">
-                    <a href="#">1</a>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">4</a>
-                  </li>
-                  <li>
-                    <a href="#">5</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="glyphicon glyphicon-chevron-right" />
-                    </a>
-                  </li>
-                </ul>
+                <Pagination />
               </div>
             </div>
           </div>
+              {/* Modal  */}
+              <Modal />
         </div>
-      </section>
+     
+      // </section>
     );
   }
 }

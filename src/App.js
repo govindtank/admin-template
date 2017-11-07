@@ -7,6 +7,7 @@ import SideBar from './component/SideBar/SideBar'
 import Content from './component/Content/Content'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/font-awesome/css/font-awesome.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
 
 
 class App extends Component {
