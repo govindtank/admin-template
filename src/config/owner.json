@@ -47,25 +47,4 @@
     "email": "dandreone6@nbcnews.com",
     "gender": "Female",
     "phone": "445-324-6040"
-  }, {
-    "id": 8,
-    "first_name": "Susi",
-    "last_name": "Norvill",
-    "email": "snorvill7@smugmug.com",
-    "gender": "Female",
-    "phone": "278-570-7276"
-  }, {
-    "id": 9,
-    "first_name": "Laurette",
-    "last_name": "Crowcroft",
-    "email": "lcrowcroft8@earthlink.net",
-    "gender": "Female",
-    "phone": "882-758-0727"
-  }, {
-    "id": 10,
-    "first_name": "Sissie",
-    "last_name": "Elliss",
-    "email": "selliss9@slideshare.net",
-    "gender": "Female",
-    "phone": "415-427-6152"
   }]

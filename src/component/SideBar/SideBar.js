@@ -52,8 +52,8 @@ class SideBar extends Component {
     render() {
   
       return (
-          <div>
-        <div id="wrapper" className={this.props.toggled ? 'toggled': 'reduced'} >  
+        
+      
         <div id="sidebar-wrapper">
         
             <ul className="sidebar-nav">
@@ -71,11 +71,11 @@ class SideBar extends Component {
             </ul>
         </div>
 
-        </div>
+     
  
-        <Content toggled={this.props.toggled} />
+      
 
-        </div>
+
     );
 }
 }

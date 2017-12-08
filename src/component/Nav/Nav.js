@@ -4,22 +4,12 @@ import SideBar from "../SideBar/SideBar";
 import Message from '../Message/Message'
 
 class Nav extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: true
-    };
-  }
+ 
 
-  handleclick = () => {
-    console.log('hey listen '+ this.state.active)
-    this.setState(prevState => ({
-      active: !prevState.active
-    }));
-  };
+ 
   render() {
     return (
-      <div>
+    
         <nav className="navbar navbar-inverse navbar-fixed-top" style={{ marginBottom: 0 }}>
           <div className="navbar-header" style={{ width: 200 }}>
             <a className="navbar-brand" href="#">
@@ -27,7 +17,7 @@ class Nav extends Component {
             </a>
           </div>
           <ul className="nav navbar-nav">
-            <li onClick={this.handleclick}>
+            <li>
               <a>
                 <span className="glyphicon glyphicon-menu-hamburger" />
               </a>
@@ -44,8 +34,8 @@ class Nav extends Component {
             </li>
           </ul>
         </nav>
-        <SideBar toggled={this.state.active}/>
-      </div>
+        
+      
     );
   }
 }
