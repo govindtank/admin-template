@@ -5,8 +5,6 @@ import Message from '../Message/Message'
 
 class Nav extends Component {
  
-
- 
   render() {
     return (
     
@@ -18,7 +16,7 @@ class Nav extends Component {
           </div>
           <ul className="nav navbar-nav">
             <li>
-              <a>
+              <a onClick={this.props.onClick}>
                 <span className="glyphicon glyphicon-menu-hamburger" />
               </a>
             </li>

@@ -8,7 +8,7 @@ import Contract from '../../modules/Contract/Contract'
 
 class Content extends Component {
     render() {
-        console.log(this.props.toggled)
+     
       return (
         <div id="page-content-wrapper" className={this.props.toggled ? 'toggled': 'reduced'}>
        

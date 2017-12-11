@@ -5,9 +5,11 @@ import Content from '../Content/Content';
 class Container extends Component {
     render() {
         return (
-            // <div id="wrapper" className={this.props.toggled ? 'toggled': 'reduced'} >  
+
+               // <div id="wrapper" className={'toggled'} >
+            <div id="wrapper" className={this.props.toggled ? 'toggled': 'reduced'} >  
              
-            <div id="wrapper" className={'toggled'} >
+         
                 <SideBar />
                 <Content />
             </div>

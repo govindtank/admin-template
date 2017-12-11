@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './component/SideBar/Sidebar.css'
 import Nav from './component/Nav/Nav'
 import Container from './component/Main-Container/Container'
-import Content from './component/Content/Content'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/font-awesome/css/font-awesome.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
@@ -27,8 +25,8 @@ class App extends Component {
     return (
     
       <div className="App">
-        <Nav />
-        <Container />       
+        <Nav onClick={this.handleclick.bind(this)}/>
+        <Container toggled={this.state.active}/>       
       </div>
  
     );
