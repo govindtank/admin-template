@@ -59,7 +59,7 @@ class SideBar extends Component {
             <ul className="sidebar-nav">
              {menuOptions.map(option =>(
                    
-                <li onClick={this.handleclick} key={option.id} >
+                <li onClick={this.handleclick} key={option.id} className={this.props.toggled ? 'toggled': 'reduced'}>
                     <Link to={option.path}>
                          <i className={option.icon} ></i> 
                          {/* modificar esta parte para poner iconos grandes en reduced */}

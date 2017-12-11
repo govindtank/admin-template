@@ -10,7 +10,7 @@ class Container extends Component {
             <div id="wrapper" className={this.props.toggled ? 'toggled': 'reduced'} >  
              
          
-                <SideBar />
+                <SideBar toggled={this.props.toggled}/>
                 <Content />
             </div>
         );

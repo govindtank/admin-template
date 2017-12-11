@@ -26,6 +26,8 @@ body {
     height: 100%;
     margin-left: -200px;
     overflow-y: auto;
+    max-width: 100%;
+    overflow-x: hidden;
     background: #222;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -64,18 +66,32 @@ body {
     list-style: none;
     margin-top: 100px;
 }
+/*sidebar list when is toggled*/
 
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-    display:inline-block;
-    margin-right: 50px;
-
-
+li.toggled {
+  height: 30px;
 }
 
+li.toggled a i{
+    margin-left: 10px;
+}
+li.toggled a span{
+    margin-left: 10px;
+    font-size: 16px;
+}
+/*sidebar list when is reduced*/
+li.reduced {
+    margin-top: 5px; 
+}
+li.reduced a i{
+    font-size: 30px;
+    margin-left: 7px;
 
-
+    
+}
+li.reduced a span{
+    display: none;
+}
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
