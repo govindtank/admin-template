@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Owners from "../../config/owner";
 import Modal from "../../component/Modal/Modal";
 import Pagination from "../../component/Pagination/Pagination";
-import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
+import { BootstrapTable, TableHeaderColumn, InsertModalHeader } from "react-bootstrap-table";
 
 class Owner extends Component {
   constructor(props) {
@@ -11,6 +11,26 @@ class Owner extends Component {
       selected: [],
       currPage: 1
     };
+  }
+  beforeClose(e) {
+    alert(`[Custom Event]: Before modal close event triggered!`);
+  }
+
+  handleModalClose(closeModal) {
+    // Custom your onCloseModal event here,
+    // it's not necessary to implement this function if you have no any process before modal close
+    console.log('This is my custom function for modal close event');
+    closeModal();
+}
+  createCustomModalHeader = (closeModal, save) => {
+    return (
+      <InsertModalHeader
+        className='my-custom-class'
+        title='This is my custom title'
+        beforeClose={ this.beforeClose }
+        onModalClose={ () => this.handleModalClose(closeModal) }/>
+        // hideClose={ true } to hide the close button
+    );
   }
   render() {
     const { currPage } = this.state;
@@ -24,7 +44,8 @@ class Owner extends Component {
       sizePerPage: 10,
       page: currPage,
       sortName: "id",
-      sortOrder: "asc"
+      sortOrder: "asc",
+      insertModalHeader: this.createCustomModalHeader
     };
     return (
       <div>
@@ -36,6 +57,7 @@ class Owner extends Component {
           hover
           pagination={true}
           options={options}
+          insertRow //insert add button 
         >
           <TableHeaderColumn isKey dataField="id">
             Product ID
